@@ -1,0 +1,39 @@
+story_planning_task:
+  description: >
+    Develop a compelling romantic and horror story concept about {topic}.
+    Create the main characters, setting, conflict, and major plot twists.
+    Ensure the story is emotionally engaging, suspenseful, and suitable
+    for the target audience.
+  expected_output: >
+    A detailed story outline including:
+    - Story title
+    - Main characters
+    - Setting
+    - Plot summary
+    - Key romantic moments
+    - Key horror elements
+    - Major plot twists
+    - Ending summary
+  agent: story_planner
+
+story_writing_task:
+  description: >
+    Using the story outline, write a complete romantic and horror story.
+    Include vivid descriptions, emotional character interactions,
+    suspenseful scenes, and a satisfying conclusion.
+    Make the narrative immersive and engaging.
+  expected_output: >
+    A fully written romantic and horror story formatted as markdown
+    without '```'. The story should contain multiple chapters or sections,
+    detailed character development, dialogue, suspense, and emotional depth.
+  agent: story_writer
+
+story_editing_task:
+  description: >
+    Review the completed story and improve pacing, dialogue,
+    emotional impact, suspense, grammar, and readability.
+    Ensure consistency in plot and character behavior.  
+  expected_output: >
+    A polished final version of the story formatted as markdown
+    without '```', ready for publication or sharing.
+  agent: story_editor
